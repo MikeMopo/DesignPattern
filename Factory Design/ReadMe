@@ -1,0 +1,19 @@
+In Factory pattern, we create object without exposing the creation logic to the client
+and refer to newly created object using a common interface.
+
+Usages : A framework needs to standardize the architectural model for a range of applications,
+        but allow for individual applications to define their own domain objects
+        and provide for their instantiation.
+
+Step 1
+Create an interface (Student).
+
+Step 2
+Create concrete classes (Male and Female) implementing the same interface.
+
+Step 3
+Create a class (Factory/StudentService) to generate object of concrete class based on given information.
+
+Step 4
+Use another class (StudentImpl) to implement the object of concrete class by passing an information such as type.
+
